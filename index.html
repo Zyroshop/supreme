@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="nl"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>ZYRO — Streetwear</title><link rel="stylesheet" href="styles.css"></head>
+<body>
+<div class="topline">ZYRO DROP 02 — FIND YOUR OWN WAY</div>
+<header><a class="brand" href="#">ZYRO<span>®</span></a><nav><a href="#shop">SHOP</a><a href="#customize">CUSTOMIZE</a><a href="#story">OUR STORY</a><a href="#sustainability">SUSTAINABILITY</a></nav><div class="head-actions"><button id="searchBtn">SEARCH ⌕</button><button id="bagBtn">BAG (<span id="bagCount">0</span>)</button><button class="mobile-menu" id="mobileMenu">☰</button></div></header>
+<div class="searchbar hidden" id="searchBar"><input id="searchInput" placeholder="Zoek hoodies, jassen, mutsen, accessoires..."><button id="clearSearch">×</button></div>
+<section class="hero"><div class="hero-image"></div><div class="hero-content"><p class="label">NEW COLLECTION / 2026</p><h1>OWN YOUR<br>EVERYDAY<span>.</span></h1><p>Streetwear made for your own lane. Nieuwe fits, tijdloze basics en details die jouw stijl laten spreken.</p><a class="button" href="#shop">SHOP THE COLLECTION ↗</a></div><div class="hero-note">DESIGNED WITH INTENTION — ZYRO</div></section>
+<div class="ticker"><span>BUILT FOR EVERYDAY</span><span>YOUR STYLE, YOUR RULES</span><span>MADE WITH PURPOSE</span><span>BUILT FOR EVERYDAY</span></div>
+<main>
+<section class="shop" id="shop"><div class="section-heading"><div><p class="label">THE ZYRO SELECTION</p><h2>FIND YOUR FIT<span>.</span></h2></div><p>From everyday essentials to standout pieces.</p></div>
+<div class="filters" id="filters"><button class="selected" data-cat="all">ALL ITEMS</button><button data-cat="hoodies">HOODIES</button><button data-cat="tshirts">T-SHIRTS</button><button data-cat="jackets">JACKETS</button><button data-cat="pants">PANTS</button><button data-cat="shorts">SHORTS</button><button data-cat="hats">MUTSEN & CAPS</button><button data-cat="accessories">ACCESSORIES</button></div>
+<div class="product-grid" id="productGrid"></div><p id="noResults" class="no-results hidden">Geen producten gevonden.</p></section>
+
+<section class="customizer" id="customize">
+  <div class="section-heading"><div><p class="label">MAKE IT YOURS</p><h2>DESIGN YOUR<br>OWN PIECE<span>.</span></h2></div><p>Kies je item, kleur en eigen tekst. Je ziet hieronder meteen een simpele preview van jouw idee.</p></div>
+  <div class="customizer-layout">
+    <div class="custom-controls">
+      <label for="customItem">1. KIES JE KLEDINGSTUK</label>
+      <select id="customItem"><option value="hoodie">Oversized hoodie</option><option value="tee">T-shirt</option><option value="beanie">Muts / beanie</option><option value="cap">Pet</option><option value="sweatshirt">Crewneck sweater</option><option value="tote">Tote bag</option></select>
+      <label for="customColor">2. KIES EEN KLEUR</label>
+      <div class="swatches" id="customSwatches">
+        <button type="button" class="swatch active" data-color="#222222" aria-label="Zwart" style="--swatch:#222222"></button>
+        <button type="button" class="swatch" data-color="#e9e5dc" aria-label="Off-white" style="--swatch:#e9e5dc"></button>
+        <button type="button" class="swatch" data-color="#777a7e" aria-label="Grijs" style="--swatch:#777a7e"></button>
+        <button type="button" class="swatch" data-color="#526b84" aria-label="Blauw" style="--swatch:#526b84"></button>
+        <button type="button" class="swatch" data-color="#66705b" aria-label="Olijfgroen" style="--swatch:#66705b"></button>
+      </div>
+      <label for="customText">3. JOUW TEKST / NAAM</label>
+      <input id="customText" maxlength="16" placeholder="Bijv. ZYRO / YOUR NAME" value="ZYRO">
+      <label for="customPlacement">4. PLAATSING VAN DE TEKST</label>
+      <select id="customPlacement"><option value="center">Midden op de voorkant</option><option value="left">Kleine print links op de borst</option><option value="back">Grote print op de rug</option></select>
+      <p class="custom-note">Dit is een concept-preview, geen drukbestand. Je kunt je idee bekijken en aan de demo-bag toevoegen.</p>
+      <button class="button" id="saveDesign">ADD MY DESIGN TO BAG ↗</button>
+    </div>
+    <div class="preview-panel">
+      <div class="preview-top"><span>LIVE PREVIEW</span><span>ZYRO CUSTOM LAB / 001</span></div>
+      <div class="garment-stage"><div class="garment hoodie" id="garmentPreview"><span class="garment-mark" id="garmentMark">ZYRO</span></div></div>
+      <div class="preview-caption"><span id="previewName">OVERSIZED HOODIE</span><span>YOUR IDEA. YOUR RULES.</span></div>
+    </div>
+  </div>
+</section>
+\n<section class="feature" id="sustainability"><div class="feature-photo"></div><div class="feature-copy"><p class="label">LESS NOISE. MORE MEANING.</p><h2>STYLE THAT<br>GOES FURTHER<span>.</span></h2><p>ZYRO is mijn persoonlijke streetwear-project. Ik wil werken aan kleding die goed voelt om te dragen én waarbij bewuste keuzes belangrijk zijn. Productinformatie over materialen en productie voegen we toe zodra die gecontroleerd is.</p><a href="#story" class="text-link">READ OUR STORY ↗</a></div></section>
+<section class="story" id="story"><p class="label">A BRAND BUILT PERSONALLY</p><h2>NOT HERE TO FIT IN.<br>HERE TO BE YOURSELF<span>.</span></h2><p>Ik heb ZYRO persoonlijk opgebouwd vanuit mijn liefde voor urban kleding, sterke silhouetten en minimalistische designs. Dit is het begin — de collectie groeit verder met nieuwe fits en ideeën.</p></section>
+</main>
+<footer><a class="brand" href="#">ZYRO<span>®</span></a><span>MADE WITH PURPOSE. WORN YOUR WAY.</span><small>© 2026 ZYRO · Webshop-demo</small></footer>
+<div class="shade hidden" id="shade"></div><aside class="cart" id="cart"><div class="cart-head"><div><p class="label">YOUR SELECTION</p><h2>YOUR BAG (<span id="cartCount">0</span>)</h2></div><button id="closeCart">×</button></div><div id="cartItems"></div><p id="emptyCart" class="empty">Your bag is empty.</p><div id="cartFooter" class="cart-footer hidden"><p>SUBTOTAL <b id="subtotal">€0,00</b></p><small>Demo-checkout: betalingen zijn nog niet actief.</small><button class="button" id="checkout">CONTINUE TO CHECKOUT ↗</button></div></aside><div class="toast" id="toast"></div>
+<div class="detail-overlay hidden" id="productDetail" role="dialog" aria-modal="true" aria-label="Productdetails"><div class="detail-panel"><button class="detail-close" id="detailClose" aria-label="Sluiten">×</button><div class="detail-gallery"><img id="detailMainImage" alt="Grote productfoto"><div id="detailThumbs" class="detail-thumbs"></div></div><div class="detail-info"><p class="label">ZYRO / PRODUCT DETAILS</p><h2 id="detailName"></h2><p id="detailPrice" class="detail-price"></p><p id="detailDesc"></p><p class="size-title">SELECTEER JE MAAT</p><div id="detailSizes" class="detail-sizes"></div><p id="sizeHelp" class="size-help"></p><button id="detailAdd" class="detail-add">TOEVOEGEN AAN WINKELMAND →</button><p class="detail-note">Bekijk het product in het groot en kies je maat. Productfoto's zijn conceptbeelden.</p></div></div></div><script src="script.js"></script></body></html>
